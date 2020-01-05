@@ -1,5 +1,4 @@
 configuration {
-	modi: "window,drun,ssh,combi";
-	combi-modi: "window,drun,ssh";
+	modi: "drun";
 	theme: "flat-orange";
 }
