@@ -113,4 +113,4 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1080"
 alias unsetproxy="unset ALL_PROXY"
 
-export PATH="$HOME/usr/bin:$HOME/.emacs.d/bin:$PATH"
+export PATH="$HOME/Usr/bin:$HOME/.emacs.d/bin:$PATH"
