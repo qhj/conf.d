@@ -1,0 +1,93 @@
+{
+    // HTTP Proxy
+    // "http.proxy": "http://127.0.0.1:8118",
+
+    // UI
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.activityBar.visible": false,
+    "workbench.view.experimental.allowMovingToNewContainer": true,
+
+    // Editor
+    "editor.mouseWheelZoom": true,
+    "editor.wordWrap": "on",
+    "editor.suggestSelection": "first",
+    "editor.snippetSuggestions": "top",
+    "editor.fontLigatures": true,
+    "files.autoSave": "afterDelay",
+    "editor.cursorStyle": "block-outline",
+    "editor.cursorBlinking": "phase",
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "[markdown]": {
+        "editor.quickSuggestions": true
+    },
+
+    // Programming language
+    "javascript.suggest.completeFunctionCalls": true,
+    "typescript.suggest.completeFunctionCalls": true,
+    // "[javascript]": {
+    //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // },
+    // "[html]": {
+    //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // },
+
+    // LaTeX
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "biber",
+            "command": "biber",
+            "args": [
+                "-l=zh__pinyin",
+                // "-l=zh__stroke",
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "xelatex ➞ bibtex ➞ xelatex × 2",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "xelatex ➞ biber ➞ xelatex × 2",
+            "tools": [
+                "xelatex",
+                "biber",
+                "xelatex",
+                "xelatex"
+            ]
+        }
+    ]
+}
