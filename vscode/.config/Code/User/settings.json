@@ -7,9 +7,11 @@
     "workbench.iconTheme": "vscode-icons",
     "workbench.activityBar.visible": false,
     "workbench.view.experimental.allowMovingToNewContainer": true,
+    "window.zoomLevel": 0,
 
     // Editor
     "editor.mouseWheelZoom": true,
+    "editor.renderWhitespace": "all",
     "editor.wordWrap": "on",
     "editor.suggestSelection": "first",
     "editor.snippetSuggestions": "top",
@@ -17,6 +19,7 @@
     "files.autoSave": "afterDelay",
     "editor.cursorStyle": "block-outline",
     "editor.cursorBlinking": "phase",
+    "editor.formatOnPaste": true,
     "[javascript]": {
         "editor.tabSize": 2
     },
@@ -25,8 +28,8 @@
     },
 
     // Programming language
-    "javascript.suggest.completeFunctionCalls": true,
-    "typescript.suggest.completeFunctionCalls": true,
+    // "javascript.suggest.completeFunctionCalls": true,
+    // "typescript.suggest.completeFunctionCalls": true,
     // "[javascript]": {
     //     "editor.defaultFormatter": "esbenp.prettier-vscode"
     // },

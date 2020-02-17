@@ -28,7 +28,7 @@
     "Code blocks": {
         "prefix": "```",
         "body": [
-            "```${1:language}|",
+            "```${1:language}",
             "$2",
             "```",
             "$0"
