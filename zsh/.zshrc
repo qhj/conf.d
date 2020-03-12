@@ -114,4 +114,4 @@ alias stow='stow -t $HOME'
 alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1080"
 alias unsetproxy="unset ALL_PROXY"
 
-export PATH="$HOME/Usr/bin:$HOME/.emacs.d/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.emacs.d/bin:$PATH"
