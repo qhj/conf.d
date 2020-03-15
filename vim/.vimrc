@@ -25,6 +25,7 @@ set encoding=utf-8
 set completeopt=longest,menu
 set confirm
 set lbr
+set clipboard=unnamedplus
 
 
 " enable pwoerline font
