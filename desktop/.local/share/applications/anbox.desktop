@@ -1,7 +1,7 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
 Comment=
-Exec=anbox session-manager --single-window --window-size=1024,576
+Exec=anbox session-manager --single-window --window-size=1280,640
 GenericName=Android in a box
 Icon=anbox
 Name=Anbox
