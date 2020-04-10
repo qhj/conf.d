@@ -12,7 +12,6 @@ set autoindent
 set cindent
 set showcmd
 set smartindent
-set nobackup
 set noswapfile
 set cursorline
 set t_Co=256
