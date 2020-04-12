@@ -25,6 +25,7 @@ set completeopt=longest,menu
 set confirm
 set lbr
 set clipboard=unnamedplus
+set mouse=a
 
 
 " enable pwoerline font
