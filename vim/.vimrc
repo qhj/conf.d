@@ -28,7 +28,8 @@ set clipboard=unnamedplus
 set mouse=a
 
 " https://stackoverflow.com/questions/25267062/after-pasting-a-yanked-line-in-vim-why-cant-i-paste-it-again#comment103076593_25282274
-xnoremap P Pgvy
+" https://superuser.com/a/321726
+xnoremap p "_dP
 
 
 " enable pwoerline font
