@@ -6,7 +6,6 @@
   "workbench.colorTheme": "One Dark Pro",
   "workbench.iconTheme": "vscode-icons",
   "workbench.activityBar.visible": false,
-  "workbench.view.experimental.allowMovingToNewContainer": true,
   "window.zoomLevel": 0,
 
   // Editor
@@ -20,12 +19,16 @@
   "files.autoSave": "afterDelay",
   "editor.cursorStyle": "block-outline",
   "editor.cursorBlinking": "phase",
-  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.tabSize": 2,
+    "editor.renameOnType": true,
+  },
   "[vue]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
   },
   "[javascript]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
   },
   "[css]": {
     "editor.tabSize": 2
@@ -40,18 +43,35 @@
     "editor.quickSuggestions": true
   },
 
-  // emmet
-  "emmet.extensionsPath": "",
+  // vim
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "u"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "undo"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<C-r>"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "redo"
+        }
+      ]
+    }
+  ],
 
   // Programming language
-  // "javascript.suggest.completeFunctionCalls": true,
-  // "typescript.suggest.completeFunctionCalls": true,
-  // "[javascript]": {
-  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
-  // },
-  // "[html]": {
-  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
-  // },
+  "javascript.suggest.completeFunctionCalls": true,
+  "typescript.suggest.completeFunctionCalls": true,
 
   // LaTeX
   "latex-workshop.view.pdf.viewer": "tab",
