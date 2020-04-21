@@ -128,5 +128,6 @@
         "xelatex"
       ]
     }
-  ]
+  ],
+  "vim.useSystemClipboard": true
 }
