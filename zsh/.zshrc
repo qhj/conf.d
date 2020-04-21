@@ -113,5 +113,6 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 alias stow='stow -t $HOME'
 alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1080"
 alias unsetproxy="unset ALL_PROXY"
+alias vim='nvim'
 
 export PATH="$HOME/.yarn/bin:$HOME/.emacs.d/bin:$PATH"
