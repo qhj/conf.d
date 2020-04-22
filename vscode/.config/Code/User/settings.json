@@ -129,5 +129,6 @@
       ]
     }
   ],
-  "vim.useSystemClipboard": true
+  "vim.useSystemClipboard": true,
+  "tslint.packageManager": "yarn"
 }
