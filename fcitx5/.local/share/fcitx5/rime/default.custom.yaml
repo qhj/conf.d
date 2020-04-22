@@ -2,6 +2,6 @@ patch:
   ascii_composer:
     good_old_caps_lock: false
   schema_list:
-    - schema: wubi86
     - schema: luna_pinyin_simp
-  "menu/page_size": 9
+    - schema: wubi86
+  menu/page_size: 7
