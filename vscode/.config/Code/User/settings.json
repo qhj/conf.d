@@ -5,7 +5,7 @@
   // UI
   "workbench.colorTheme": "One Dark Pro",
   "workbench.iconTheme": "vscode-icons",
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
   "window.zoomLevel": 0,
 
   // Editor
@@ -130,5 +130,6 @@
     }
   ],
   "vim.useSystemClipboard": true,
-  "tslint.packageManager": "yarn"
+  "tslint.packageManager": "yarn",
+  "eslint.packageManager": "yarn"
 }
