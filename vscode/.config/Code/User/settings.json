@@ -20,6 +20,7 @@
   "editor.cursorStyle": "block-outline",
   "editor.cursorBlinking": "phase",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
   "[html]": {
     "editor.tabSize": 2,
     "editor.renameOnType": true,
