@@ -47,6 +47,12 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
+  "emmet.syntaxProfiles": {
+    "html": "xhtml",
+    "jsx": {
+      "self_closing_tag": "xhtml"
+    }
+  },
 
   // vim
   "vim.useSystemClipboard": true,
