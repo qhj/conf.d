@@ -53,6 +53,7 @@
       "self_closing_tag": "xhtml"
     }
   },
+  "emmet.triggerExpansionOnTab": true,
 
   // vim
   "vim.useSystemClipboard": true,
