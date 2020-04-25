@@ -21,24 +21,9 @@
   "editor.cursorBlinking": "phase",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.tabSize": 2,
   "[html]": {
-    "editor.tabSize": 2,
     "editor.renameOnType": true,
-  },
-  "[vue]": {
-    "editor.tabSize": 2,
-  },
-  "[javascript]": {
-    "editor.tabSize": 2,
-  },
-  "[css]": {
-    "editor.tabSize": 2
-  },
-  "[jsonc]": {
-    "editor.tabSize": 2
-  },
-  "[json]": {
-    "editor.tabSize": 2
   },
   "[markdown]": {
     "editor.quickSuggestions": true
