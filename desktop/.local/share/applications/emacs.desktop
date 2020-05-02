@@ -1,0 +1,19 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Categories=Development;TextEditor;
+Comment=Edit text
+Exec=env LC_CTYPE=zh_CN.UTF-8 emacs %F
+GenericName=Text Editor
+Icon=emacs
+Keywords=Text;Editor;
+MimeType=text/english;text/plain;text/x-makefile;text/x-c++hdr;text/x-c++src;text/x-chdr;text/x-csrc;text/x-java;text/x-moc;text/x-pascal;text/x-tcl;text/x-tex;application/x-shellscript;text/x-c;text/x-c++;
+Name=Emacs
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+StartupWMClass=Emacs
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
