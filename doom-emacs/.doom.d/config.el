@@ -60,4 +60,5 @@
 (setq!
  rime-user-data-dir "~/.local/share/fcitx5/rime"
  rime-show-candidate 'posframe
+ rime-show-preedit 'inline
  )
