@@ -67,6 +67,10 @@
       ]
     }
   ],
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/bin/fcitx5-remote",
+  "vim.autoSwitchInputMethod.switchIMCmd": "/usr/bin/fcitx5-remote -t {im}",
+  "vim.autoSwitchInputMethod.defaultIM": "1",
 
   // Programming language
   "javascript.suggest.completeFunctionCalls": true,
@@ -130,5 +134,5 @@
   ],
   "tslint.packageManager": "yarn",
   "eslint.packageManager": "yarn",
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
 }
