@@ -57,8 +57,15 @@
   :custom
   (default-input-method "rime"))
 
-(setq!
- rime-user-data-dir "~/.local/share/fcitx5/rime"
- rime-show-candidate 'posframe
- rime-show-preedit 'inline
- )
+(setq rime-user-data-dir "~/.local/share/fcitx5/rime"
+      rime-show-candidate 'posframe
+      rime-show-preedit 'inline
+      rime-posframe-properties
+      (list :font "Noto Serif CJK SC-17"))
+
+(set-face-attribute 'rime-default-face nil
+                    :background "#ffffff"
+                    :foreground "#000000")
+
+(set-face-attribute 'rime-highlight-candidate-face nil
+                    :foreground "purple")
