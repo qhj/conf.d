@@ -70,3 +70,5 @@
 
 (set-face-attribute 'rime-highlight-candidate-face nil
                     :foreground "purple")
+
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
