@@ -110,8 +110,6 @@ source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1080"
-alias unsetproxy="unset ALL_PROXY"
 alias vim='nvim'
 
 export PATH="$HOME/App/bin:$HOME/.yarn/bin:$HOME/.emacs.d/bin:$HOME/development/flutter/bin:$PATH"
