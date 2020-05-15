@@ -134,5 +134,6 @@
   ],
   "tslint.packageManager": "yarn",
   "eslint.packageManager": "yarn",
+  "npm.packageManager": "yarn",
   "javascript.updateImportsOnFileMove.enabled": "always",
 }
