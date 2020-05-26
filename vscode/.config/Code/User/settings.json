@@ -17,6 +17,7 @@
   "editor.snippetSuggestions": "top",
   "editor.fontLigatures": true,
   "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 5000,
   "editor.cursorStyle": "block-outline",
   "editor.cursorBlinking": "phase",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
