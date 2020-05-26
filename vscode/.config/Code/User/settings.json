@@ -41,37 +41,6 @@
   },
   "emmet.triggerExpansionOnTab": true,
 
-  // vim
-  "vim.useSystemClipboard": true,
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "u"
-      ],
-      "after": [],
-      "commands": [
-        {
-          "command": "undo"
-        }
-      ]
-    },
-    {
-      "before": [
-        "<C-r>"
-      ],
-      "after": [],
-      "commands": [
-        {
-          "command": "redo"
-        }
-      ]
-    }
-  ],
-  "vim.autoSwitchInputMethod.enable": true,
-  "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/bin/fcitx5-remote",
-  "vim.autoSwitchInputMethod.switchIMCmd": "/usr/bin/fcitx5-remote -t {im}",
-  "vim.autoSwitchInputMethod.defaultIM": "1",
-
   // Programming language
   "javascript.suggest.completeFunctionCalls": true,
   "typescript.suggest.completeFunctionCalls": true,
