@@ -1,4 +1,5 @@
 #Server = https://cdn.repo.archlinuxcn.org/$arch
 Server = https://mirrors.cloud.tencent.com/archlinuxcn/$arch
+Server = https://mirrors.aliyun.com/archlinuxcn/$arch
 Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
