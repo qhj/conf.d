@@ -42,3 +42,5 @@ EnabledAddons=
 # Force Disabled Addons
 DisabledAddons=
 
+# 共享输入状态
+ShareInputState=All
