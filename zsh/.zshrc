@@ -110,6 +110,10 @@ source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Use Neovim as "preferred editor"
+export VISUAL='nvim'
+# Use Neovim instead of Vim or Vi
 alias vim='nvim'
+alias vi='nvim'
 
 export PATH="$HOME/App/bin:$HOME/.yarn/bin:$HOME/.emacs.d/bin:$HOME/development/flutter/bin:$PATH"
