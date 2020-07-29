@@ -1,0 +1,19 @@
+root = true
+
+[*]
+end_of_line = lf
+charset = utf-8
+insert_final_newline = true
+
+[*.{js,py,vim,cs,c,css,html,ts,json}]
+indent_style = space
+
+[*.{js,json,vim,html,css}]
+indent_size = 2
+
+[*.{py,cs,c}]
+indent_size = 4
+
+[Makefile]
+indent_style = tab
+
