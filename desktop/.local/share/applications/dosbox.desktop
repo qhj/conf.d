@@ -2,7 +2,7 @@
 [Desktop Entry]
 Categories=Application;Game;
 Comment=Emulator with builtin DOS for running DOS Games
-Exec=dosbox -conf ~/.dosbox/dosbox.conf
+Exec=bash -c "dosbox -conf $XDG_CONFIG_HOME/dosbox/dosbox.conf"
 Icon=dosbox
 Name=Dosbox
 NoDisplay=false
