@@ -82,7 +82,7 @@
       ]
     },
     {
-      "name": "xelatex ➞ bibtex ➞ xelatex × 2",
+      "name": "xelatex -> bibtex -> xelatex  *  2",
       "tools": [
         "xelatex",
         "bibtex",
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "name": "xelatex ➞ biber ➞ xelatex × 2",
+      "name": "xelatex -> biber -> xelatex  *  2",
       "tools": [
         "xelatex",
         "biber",
