@@ -19,12 +19,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'honza/vim-snippets'
 Plug 'lervag/vimtex'
 Plug 'voldikss/vim-floaterm'
-"Plug 'godlygeek/tabular' | Plug 'plasticboy/vim-markdown'
-"Plug 'pangloss/vim-javascript'
-"Plug 'leafgarland/typescript-vim'
-"Plug 'peitalin/vim-jsx-typescript'
-"Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-"Plug 'jparise/vim-graphql'
+Plug 'kevinhwang91/rnvimr'
 
 call plug#end()
 

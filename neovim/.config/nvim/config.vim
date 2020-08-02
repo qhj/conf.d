@@ -99,6 +99,9 @@ let g:lightline = {
   \ }
 
 
+let g:rnvimr_ex_enable = 1
+
+
 "" startify
 let g:startify_lists = [
   \ { 'type': 'files',     'header': ['   Files']},
