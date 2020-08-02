@@ -1,0 +1,9 @@
+set adjust-open "width"
+set selection-clipboard clipboard
+set guioptions ""
+set show-v-scrollbar "true"
+
+set default-bg "#282C34"
+set recolor-lightcolor "#282C34"
+set inputbar-bg "#282C34"
+set recolor "true"
