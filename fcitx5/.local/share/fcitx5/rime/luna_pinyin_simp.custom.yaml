@@ -1,0 +1,5 @@
+patch:
+  #  emoji
+  # https://github.com/rime/rime-emoji/issues/16#issuecomment-599145119
+  __include: emoji_suggestion:/patch
+
