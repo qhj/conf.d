@@ -210,7 +210,7 @@ for_window [class="^.*"] border pixel 1
 exec_always picom
 
 # wallpaper
-exec_always feh --bg-scale ~/Pictures/Wallpapers/TranscodedWallpaper.jpg
+exec_always feh --bg-scale --randomize ~/Pictures/Wallpapers/*
 
 # ajusting volume through qdbus
 bindsym XF86AudioRaiseVolume exec qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "increase_volume"
