@@ -204,13 +204,13 @@ gaps inner 5
 gaps outer 5
 
 # hide window title
-for_window [class="^.*"] border pixel 1
+for_window [class=".*"] border pixel 0
 
 # compositor
 exec_always picom
 
 # wallpaper
-exec_always feh --bg-scale --randomize ~/Pictures/Wallpapers/*
+exec_always feh --bg-fill ~/Pictures/Wallpapers/*
 
 # ajusting volume through qdbus
 bindsym XF86AudioRaiseVolume exec qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "increase_volume"
