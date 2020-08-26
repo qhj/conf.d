@@ -193,7 +193,7 @@ for_window [class="Kmix"] floating enable; border none
 for_window [class="Klipper"] floating enable; border none
 for_window [class="Plasmoidviewer"] floating enable; border none
 for_window [class="(?i)*nextcloud*"] floating disable
-for_window [class="plasmashell" window_type="notification"] floating enable, border none, move position 640px 40px
+for_window [class="plasmashell" window_type="notification"] floating enable, border none, move position 50px 50px
 no_focus [class="plasmashell" window_type="notification"]
 
 # start rofi (a program launcher)
