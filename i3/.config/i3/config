@@ -218,3 +218,5 @@ bindsym XF86AudioLowerVolume exec qdbus org.kde.kglobalaccel /component/kmix inv
 bindsym XF86AudioMute exec qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "mute"
 bindsym XF86AudioMicMute exec qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "mic_mute"
 
+# no focus when mouse hover
+focus_follows_mouse no
