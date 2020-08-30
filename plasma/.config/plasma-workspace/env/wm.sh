@@ -1,2 +1,2 @@
 #!/bin/sh
-export KDEWM=/usr/bin/i3
+export KDEWM=/usr/bin/xmonad
