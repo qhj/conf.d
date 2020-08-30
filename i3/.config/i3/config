@@ -200,7 +200,7 @@ no_focus [class="plasmashell" window_type="notification"]
 bindsym $mod+d exec rofi -show
 
 # window gpas
-gaps inner 5
+gaps inner 10
 gaps outer 5
 
 # hide window title
