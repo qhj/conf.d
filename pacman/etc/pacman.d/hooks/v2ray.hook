@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = v2ray
+
+[Action]
+Description = Setting capabilities for /usr/bin/v2ray
+Depends = v2ray
+When = PostTransaction
+Exec = /usr/bin/setcap "cap_net_admin,cap_net_bind_service=ep" /usr/bin/v2ray
