@@ -40,9 +40,6 @@ vnoremap H 0
 nnoremap L $
 vnoremap L $
 
-inoremap jk <Esc>
-inoremap kj <Esc>
-
 " Better tabbing
 vnoremap > >gv
 vnoremap < <gv
