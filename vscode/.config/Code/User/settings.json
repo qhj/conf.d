@@ -3,12 +3,13 @@
   // "http.proxy": "http://127.0.0.1:8118",
 
   // UI
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "Atom Material Theme",
   "workbench.iconTheme": "vscode-icons",
   "workbench.activityBar.visible": true,
   "window.zoomLevel": 0,
 
   // Editor
+  "files.autoSave": "onWindowChange",
   "explorer.openEditors.visible": 0,
   "editor.mouseWheelZoom": true,
   "editor.renderWhitespace": "all",
