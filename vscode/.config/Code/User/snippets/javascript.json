@@ -12,17 +12,32 @@
   //   ],
   //   "description": "Log output to console"
   // }
-  "React component": {
-    "prefix": "react",
+  "React Functional Component": {
+    "prefix": "rfc",
     "body": [
-      "import React from \"react\"",
-      "",
-      "export default () => (",
-      "\t<div>",
-      "\t\t$0",
-      "\t</div>",
-      ")"
+      "const ${1:Foo} = () => {",
+      "  return (",
+      "    <div>",
+      "      $0",
+      "    </div>",
+      "  )",
+      "}"
     ],
-    "description": "Log output to console"
-  }
+    "description": "Create a React Memo Functional Component with ES7 module system"
+  },
+  "React Memoized Functional Component": {
+    "prefix": "rmc",
+    "body": [
+      "import { memo } from 'react'",
+      "",
+      "const ${1:Foo} = memo(() => {",
+      "  return (",
+      "    <div>",
+      "      $0",
+      "    </div>",
+      "  )",
+      "})"
+    ],
+    "description": "Create a React Memoized Functional Component with ES7 module system"
+  },
 }
