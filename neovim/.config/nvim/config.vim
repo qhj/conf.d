@@ -12,9 +12,6 @@ set undofile
 set shiftround
 set splitbelow
 set splitright
-set clipboard =unnamedplus
-xnoremap p "_dP
-set ignorecase
 set noshowmode
 
 augroup TerminalStuff
@@ -27,6 +24,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 colorscheme onedark
 
 
+
 tnoremap <Esc> <C-\><C-n>
 tnoremap <C-v><Esc> <Esc>
 
@@ -34,11 +32,6 @@ tnoremap <M-h> <c-\><c-n><c-w>h
 tnoremap <M-j> <c-\><c-n><c-w>j
 tnoremap <M-k> <c-\><c-n><c-w>k
 tnoremap <M-l> <c-\><c-n><c-w>l
-
-nnoremap H 0
-vnoremap H 0
-nnoremap L $
-vnoremap L $
 
 " Better tabbing
 vnoremap > >gv
@@ -63,31 +56,7 @@ set conceallevel =1
 let g:tex_conceal = 'abdmg'
 
 
-" fcitx5
-let g:editing_input_method = 1
 
-if system('fcitx5-remote') != 1
-  call system('fcitx5-remote -t')
-endif
-
-augroup Fcitx-Switch
-  autocmd!
-  autocmd InsertEnter * call EnterInsert()
-  autocmd InsertLeave * call LeaveInsert()
-augroup END
-
-function EnterInsert()
-  if g:editing_input_method != system('fcitx5-remote')
-    call system('fcitx5-remote -t')
-  endif
-endfunction
-
-function LeaveInsert()
-  let g:editing_input_method = system('fcitx5-remote')
-  if 1 != system('fcitx5-remote')
-    call system('fcitx5-remote -t')
-  endif
-endfunction
 
 
 " Plugins
