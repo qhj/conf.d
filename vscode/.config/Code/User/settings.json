@@ -2,15 +2,17 @@
   // HTTP Proxy
   // "http.proxy": "http://127.0.0.1:8118",
 
-  // UI
-  "workbench.colorTheme": "Atom Material Theme",
+  // Workspace
+  "workbench.colorTheme": "One Dark Pro",
   "workbench.iconTheme": "vscode-icons",
-  "workbench.activityBar.visible": true,
   "window.zoomLevel": 0,
+  "workbench.list.automaticKeyboardNavigation": false,
+  
+  // explorer
+  "explorer.compactFolders": false,
 
   // Editor
   "files.autoSave": "onWindowChange",
-  "explorer.openEditors.visible": 0,
   "editor.mouseWheelZoom": true,
   "editor.renderWhitespace": "all",
   "editor.wordWrap": "on",
@@ -22,9 +24,8 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.tabSize": 2,
-  "[html]": {
-    "editor.renameOnType": true,
-  },
+  "editor.minimap.enabled": false,
+  "editor.linkedEditing": true,
   "[markdown]": {
     "editor.quickSuggestions": true
   },
@@ -105,4 +106,265 @@
   "eslint.packageManager": "yarn",
   "npm.packageManager": "yarn",
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim/init.vim",
+  "whichkey.bindings": [
+    {
+      "key": " ",
+      "name": "global",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": " ",
+          "name": "commands",
+          "type": "command",
+          "command": "workbench.action.showCommands"
+        },
+        {
+          "key": ",",
+          "name": "open settings",
+          "type": "command",
+          "command": "workbench.action.openGlobalSettings"
+        },
+        {
+          "key": "<",
+          "name": "open settings json",
+          "type": "command",
+          "command": "workbench.action.openSettingsJson"
+        },
+        {
+          "key": "k",
+          "name": "open keybindings",
+          "type": "command",
+          "command": "workbench.action.openGlobalKeybindings"
+        },
+        {
+          "key": "K",
+          "name": "open keybindings json",
+          "type": "command",
+          "command": "workbench.action.openGlobalKeybindingsFile"
+        },
+        {
+          "key": "c",
+          "name": "color theme",
+          "type": "command",
+          "command": "workbench.action.selectTheme"
+        },
+        {
+          "key": "i",
+          "name": "file icon theme",
+          "type": "command",
+          "command": "workbench.action.selectIconTheme"
+        },
+        {
+          "key": "s",
+          "name": "user snippet",
+          "type": "command",
+          "command": "workbench.action.openSnippets"
+        },
+        {
+          "key": "b",
+          "name": "toggle side bar",
+          "type": "command",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
+        {
+          "key": "p",
+          "name": "toggle panel",
+          "type": "command",
+          "command": "workbench.action.togglePanel"
+        },
+        {
+          "key": "l",
+          "name": "change language mode",
+          "type": "command",
+          "command": "workbench.action.editor.changeLanguageMode"
+        },
+      ]
+    },
+    {
+      "key": "v",
+      "name": "views & smart select",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "e",
+          "name": "show explorer",
+          "type": "command",
+          "command": "workbench.view.explorer"
+        },
+        {
+          "key": "s",
+          "name": "show search",
+          "type": "command",
+          "command": "workbench.view.search"
+        },
+        {
+          "key": "g",
+          "name": "show source control",
+          "type": "command",
+          "command": "workbench.view.scm"
+        },
+        {
+          "key": "d",
+          "name": "show run",
+          "type": "command",
+          "command": "workbench.view.debug"
+        },
+        {
+          "key": "x",
+          "name": "show extensions",
+          "type": "command",
+          "command": "workbench.view.extensions"
+        },
+        {
+          "key": "v",
+          "name": "show hover",
+          "type": "command",
+          "command": "editor.action.showHover"
+        },
+      ]
+    },
+    {
+      "key": "e",
+      "name": "editor",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "s",
+          "name": "save to file",
+          "type": "command",
+          "command": "workbench.action.files.save"
+        },
+        {
+          "key": "n",
+          "name": "next editor",
+          "type": "command",
+          "command": "workbench.action.nextEditor"
+        },
+        {
+          "key": "p",
+          "name": "previous editor",
+          "type": "command",
+          "command": "workbench.action.previousEditor"
+        },
+        {
+          "key": "l",
+          "name": "move editor to right group",
+          "type": "command",
+          "command": "workbench.action.moveEditorToRightGroup"
+        }
+      ]
+    },
+    {
+      "key": "w",
+      "name": "editor group",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "h",
+          "name": "focus left group",
+          "type": "command",
+          "command": "workbench.action.focusPreviousGroup"
+        },
+        {
+          "key": "j",
+          "name": "focus below group",
+          "type": "command",
+          "command": "workbench.action.focusBelowGroup"
+        },
+        {
+          "key": "k",
+          "name": "focus above group",
+          "type": "command",
+          "command": "workbench.action.focusAboveGroup"
+        },
+        {
+          "key": "l",
+          "name": "focus right group",
+          "type": "command",
+          "command": "workbench.action.focusNextGroup"
+        },
+        {
+          "key": "c",
+          "name": "close active editor",
+          "type": "command",
+          "command": "workbench.action.closeActiveEditor"
+        },
+        {
+          "key": "u",
+          "name": "reopen closed editor",
+          "type": "command",
+          "command": "workbench.action.reopenClosedEditor"
+        },
+        {
+          "key": "C",
+          "name": "close editors in group",
+          "type": "command",
+          "command": "workbench.action.closeEditorsInGroup"
+        },
+        {
+          "key": "1",
+          "name": "focus 1st window",
+          "type": "command",
+          "command": "workbench.action.focusFirstEditorGroup"
+        },
+        {
+          "key": "2",
+          "name": "focus 2nd window",
+          "type": "command",
+          "command": "workbench.action.focusSecondEditorGroup"
+        },
+        {
+          "key": "3",
+          "name": "focus 3rd window",
+          "type": "command",
+          "command": "workbench.action.focusThirdEditorGroup"
+        },
+        {
+          "key": "4",
+          "name": "focus 4th window",
+          "type": "command",
+          "command": "workbench.action.focusFourthEditorGroup"
+        },
+        {
+          "key": "5",
+          "name": "focus 5th window",
+          "type": "command",
+          "command": "workbench.action.focusFifthEditorGroup"
+        },
+        {
+          "key": "6",
+          "name": "focus 6th window",
+          "type": "command",
+          "command": "workbench.action.focusSixthEditorGroup"
+        },
+        {
+          "key": "7",
+          "name": "focus 7th window",
+          "type": "command",
+          "command": "workbench.action.focusSeventhEditorGroup"
+        },
+        {
+          "key": "8",
+          "name": "focus 8th window",
+          "type": "command",
+          "command": "workbench.action.focusEighthEditorGroup"
+        },
+      ]
+    },
+    {
+      "key": "g",
+      "name": "go to",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "d",
+          "name": "go to defination",
+          "type": "command",
+          "command": "editor.action.revealDefinition"
+        }
+      ]
+    }
+  ],
 }
