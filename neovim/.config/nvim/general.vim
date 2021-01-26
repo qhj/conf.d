@@ -18,10 +18,6 @@ if system('fcitx5-remote') != 1
   call system('fcitx5-remote -t')
 endif
 
-" test
-" autocmd FocusGained * echo "hello"
-" autocmd FocusLost * echo "wait"
-
 augroup Fcitx-Switch
   autocmd!
   autocmd FocusGained * call NeovimFocusGained()
