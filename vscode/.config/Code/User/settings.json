@@ -17,7 +17,6 @@
   "editor.renderWhitespace": "all",
   "editor.wordWrap": "on",
   "editor.suggestSelection": "first",
-  "editor.snippetSuggestions": "top",
   "editor.fontLigatures": true,
   "editor.cursorStyle": "block-outline",
   "editor.cursorBlinking": "phase",
