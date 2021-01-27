@@ -3,7 +3,7 @@
   // "http.proxy": "http://127.0.0.1:8118",
 
   // Workspace
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "Material Theme",
   "workbench.iconTheme": "vscode-icons",
   "window.zoomLevel": 0,
   "workbench.list.automaticKeyboardNavigation": false,
@@ -14,7 +14,6 @@
   // Editor
   "files.autoSave": "onWindowChange",
   "editor.mouseWheelZoom": true,
-  "editor.renderWhitespace": "all",
   "editor.wordWrap": "on",
   "editor.suggestSelection": "first",
   "editor.fontLigatures": true,
@@ -45,7 +44,8 @@
   "javascript.suggest.completeFunctionCalls": true,
   "typescript.suggest.completeFunctionCalls": true,
 
-  // LaTeX
+  // Extension
+  "markdown-preview-enhanced.configPath": ".local/share/mume",
   "latex-workshop.view.pdf.viewer": "tab",
   "latex-workshop.latex.tools": [
     {
