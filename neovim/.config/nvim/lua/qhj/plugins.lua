@@ -69,6 +69,23 @@ return packer.startup(function(use)
   -- JSON Schema Store
   use { 'b0o/schemastore.nvim', after = 'cmp-nvim-lsp', config = [[require 'qhj.lsp']] }
 
+  -- tree sitter
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+
+  -- auto pairs
+  use { 'windwp/nvim-autopairs', after = 'nvim-cmp', config = [[require'qhj.autopairs']] }
+
+  -- comment
+  use { 'numToStr/Comment.nvim', after = 'nvim-treesitter' }
+  use {
+    'JoosepAlviste/nvim-ts-context-commentstring',
+    after = 'Comment.nvim',
+    config = function ()
+      require('qhj.tree-sitter')
+      require('qhj.comment')
+    end
+  }
+
   -- notify
   use 'rcarriga/nvim-notify'
 

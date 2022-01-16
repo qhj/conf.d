@@ -72,6 +72,7 @@ local lspconfig = require('lspconfig')
 
 -- Lua
 -- `sudo pacman -Syu lua-language-server`
+-- TODO
 lspconfig.sumneko_lua.setup {
   capabilities = caps,
   on_attach = on_attach,

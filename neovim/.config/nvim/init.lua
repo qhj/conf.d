@@ -1,3 +1,4 @@
 require 'qhj.options'
-require 'qhj.key_mappings'
+require 'qhj.key-mappings'
 require 'qhj.plugins'
+
