@@ -33,22 +33,20 @@ vim.cmd [[
   augroup end
 ]]
 
-return packer.startup(function()
+return packer.startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- colorscheme
   use {
-    'catppuccin/nvim',
-    as = 'catppuccin',
-    config = function()
-      vim.cmd [[
-        colorscheme catppuccin
-      ]]
-    end
+    'catppuccin/nvim', as = 'catppuccin',
+    config = function() vim.cmd [[colorscheme catppuccin]] end
   }
 
   -- completion
-  use { 'hrsh7th/nvim-cmp', event = { 'InsertEnter *', 'CmdlineEnter *'} }
+  use 'hrsh7th/nvim-cmp'
+
+  -- LSP configurations
+  use 'neovim/nvim-lspconfig'
 
   -- snippet engine
   use { 'L3MON4D3/LuaSnip', after = 'nvim-cmp' }
@@ -57,17 +55,22 @@ return packer.startup(function()
   use { 'hrsh7th/cmp-path', after = 'nvim-cmp' }
   use { 'hrsh7th/cmp-buffer', after = 'nvim-cmp' }
   use { 'hrsh7th/cmp-cmdline', after = 'nvim-cmp' }
+  use { 'hrsh7th/cmp-nvim-lua', after = 'nvim-cmp' }
+  use { 'hrsh7th/cmp-nvim-lsp', after = 'nvim-cmp' }
   use { 'saadparwaiz1/cmp_luasnip', after = 'nvim-cmp' }
 
   -- snippets
   use {
     "rafamadriz/friendly-snippets",
     after = 'LuaSnip',
-    config = [[require 'config.cmp']]
+    config = [[require 'qhj.cmp']]
   }
 
-  use 'rcarriga/nvim-notify'
+  -- JSON Schema Store
+  use { 'b0o/schemastore.nvim', after = 'cmp-nvim-lsp', config = [[require 'qhj.lsp']] }
 
+  -- notify
+  use 'rcarriga/nvim-notify'
 
   if packer_bootstrap then
     require('packer').sync()

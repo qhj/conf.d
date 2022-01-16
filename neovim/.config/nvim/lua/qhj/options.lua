@@ -11,7 +11,6 @@ opt.smartcase = true
 opt.splitbelow = true
 opt.splitright = true
 opt.termguicolors = true
-opt.timeoutlen = 100
 opt.undofile = true
 opt.expandtab = true
 opt.shiftwidth = 2

@@ -9,31 +9,31 @@ if not snip_ok then
 end
 
 local kind_icons = {
-  Text = "",
-  Method = "m",
-  Function = "",
-  Constructor = "",
-  Field = "",
-  Variable = "",
-  Class = "",
-  Interface = "",
-  Module = "",
-  Property = "",
-  Unit = "",
-  Value = "",
-  Enum = "",
-  Keyword = "",
-  Snippet = "",
-  Color = "",
-  File = "",
-  Reference = "",
-  Folder = "",
-  EnumMember = "",
-  Constant = "",
-  Struct = "",
-  Event = "",
-  Operator = "",
-  TypeParameter = "",
+  Text = '',
+  Method = 'm',
+  Function = 'ﬦ',
+  Constructor = '',
+  Field = '',
+  Variable = '',
+  Class = '',
+  Interface = '',
+  Module = '',
+  Property = '',
+  Unit = '',
+  Value = '',
+  Enum = '',
+  Keyword = '',
+  Snippet = '',
+  Color = '',
+  File = '',
+  Reference = '',
+  Folder = '',
+  EnumMember = '',
+  Constant = '',
+  Struct = '',
+  Event = '',
+  Operator = '',
+  TypeParameter = '',
 }
 
 require("luasnip/loaders/from_vscode").lazy_load()
@@ -60,7 +60,7 @@ cmp.setup {
     ['<C-e>'] = cmp.mapping({ i = cmp.mapping.close(), c = cmp.mapping.close() }),
     -- TODO
     ['<CR>'] = cmp.mapping({
-      i = cmp.mapping.confirm { select = false },
+      i = cmp.mapping.confirm { select = true },
       c = function(fallback)
         if cmp.visible() then
           cmp.confirm({ behavior = cmp.ConfirmBehavior.Select, select = false })
@@ -125,6 +125,8 @@ cmp.setup {
     format = function(entry, vim_item)
       vim_item.kind = kind_icons[vim_item.kind] or ''
       vim_item.menu = ({
+        nvim_lsp = '[LSP]',
+        nvim_lua = '[NvimLua]',
         luasnip = '[Snippet]',
         buffer = '[Buffer]',
         path = '[Path]',
@@ -133,6 +135,8 @@ cmp.setup {
     end,
   },
   sources = {
+    { name = 'nvim_lsp' },
+    { name = 'nvim_lua' },
     { name = 'luasnip' },
     { name = 'buffer' },
     { name = 'path' },

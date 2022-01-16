@@ -19,6 +19,9 @@ function _G.beginning_of_line()
   return col('.') == match(getline('.'), [[\S]]) + 1 and '0' or '^'
 end
 
+-- leader key
+vim.g.mapleader = ' '
+
 -- window navigation
 map('n', '<C-h>', '<C-w>h')
 map('n', '<C-j>', '<C-w>j')
