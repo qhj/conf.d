@@ -86,6 +86,15 @@ return packer.startup(function(use)
     end
   }
 
+  -- file explorer
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons',
+    },
+    config = [[require('qhj.nvim-tree')]],
+  }
+
   -- notify
   use 'rcarriga/nvim-notify'
 
