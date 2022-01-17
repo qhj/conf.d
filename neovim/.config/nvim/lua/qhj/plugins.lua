@@ -95,6 +95,15 @@ return packer.startup(function(use)
     config = [[require('qhj.nvim-tree')]],
   }
 
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    },
+    config = [[require('gitsigns').setup()]]
+  }
+
+
   -- notify
   use 'rcarriga/nvim-notify'
 

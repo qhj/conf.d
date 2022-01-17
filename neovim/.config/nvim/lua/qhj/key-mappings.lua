@@ -53,11 +53,11 @@ map('x', 'K', ":m '<-2<CR>gv=gv")
 -- local function t(str)
 --     return vim.api.nvim_replace_termcodes(str, true, true, true)
 -- end
--- 
+--
 -- function _G.cmp_down()
 --     return vim.fn.pumvisible() ~= 0 and t'<Down>' or t'<C-n>'
 -- end
--- 
+--
 -- function _G.cmp_up()
 --     return vim.fn.pumvisible() ~= 0 and t'<Up>' or t'<C-p>'
 -- end
