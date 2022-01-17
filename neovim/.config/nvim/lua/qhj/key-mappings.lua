@@ -72,3 +72,4 @@ map('x', '>', '>gv')
 map('x', '<', '<gv')
 -- better indentation
 
+map('n', 'qq', ':q<CR>')

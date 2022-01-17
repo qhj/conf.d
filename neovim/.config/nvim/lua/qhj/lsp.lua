@@ -46,7 +46,7 @@ end
 
 vim.lsp.handlers["textDocument/definition"] = goto_definition('vsplit')
 
-local on_attach = function(client, bufnr)
+local on_attach = function(_, bufnr)
   local function buf_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
 
   local opts = { noremap = true, silent = true }
@@ -88,15 +88,12 @@ lspconfig.sumneko_lua.setup {
   },
 }
 
--- TypeScript
--- `pnpm add -g typescript-language-server`
+-- TypeScript, HTML, CSS, JSON
+-- `pnpm add -g typescript-language-server vscode-langservers-extracted`
 lspconfig.tsserver.setup {
   capabilities = caps,
   on_attach = on_attach,
 }
-
--- HTML, CSS, JSON
--- `pnpm add -g vscode-langservers-extracted`
 lspconfig.html.setup {
   capabilities = caps,
   on_attach = on_attach,
@@ -118,3 +115,4 @@ lspconfig.jsonls.setup {
     },
   },
 }
+

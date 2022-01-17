@@ -40,7 +40,7 @@ require("luasnip/loaders/from_vscode").lazy_load()
 
 local has_words_before = function()
   local col = vim.fn.col '.' - 1
-  return col ~= 0 or vim.fn.getline('.'):sub(col, col):match "%s" == nil
+  return col ~= 0 and vim.fn.getline('.'):sub(col, col):match "%s" == nil
 end
 
 local function t(str)
@@ -58,12 +58,11 @@ cmp.setup {
 		['<C-j>'] = cmp.mapping(cmp.mapping.scroll_docs(1), { 'i', 'c' }),
     ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
     ['<C-e>'] = cmp.mapping({ i = cmp.mapping.close(), c = cmp.mapping.close() }),
-    -- TODO
     ['<CR>'] = cmp.mapping({
       i = cmp.mapping.confirm { select = true },
       c = function(fallback)
-        if cmp.visible() then
-          cmp.confirm({ behavior = cmp.ConfirmBehavior.Select, select = false })
+        if cmp.visible() and cmp.get_selected_entry() ~= nil then
+          cmp.confirm({ select = false })
         else
           fallback()
         end
