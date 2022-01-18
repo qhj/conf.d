@@ -74,3 +74,8 @@ map('x', '<', '<gv')
 
 map('n', 'qq', ':q<CR>')
 map('n', '<Leader>pe', ':NvimTreeToggle<CR>')
+
+-- buffer navigation
+map('n', '<M-h>', ':bprevious<CR>')
+map('n', '<M-l>', ':bnext<CR>')
+

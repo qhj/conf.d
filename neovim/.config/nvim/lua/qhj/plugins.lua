@@ -103,6 +103,11 @@ return packer.startup(function(use)
     config = [[require('gitsigns').setup()]]
   }
 
+  use {
+    'akinsho/bufferline.nvim',
+    requires = 'kyazdani42/nvim-web-devicons',
+    config = [[require("bufferline").setup{}]]
+  }
 
   -- notify
   use 'rcarriga/nvim-notify'
