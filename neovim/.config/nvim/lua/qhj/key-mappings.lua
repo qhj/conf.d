@@ -79,3 +79,7 @@ map('n', '<Leader>pe', ':NvimTreeToggle<CR>')
 map('n', '<M-h>', ':bprevious<CR>')
 map('n', '<M-l>', ':bnext<CR>')
 
+-- select "inner line" (without whitespace)
+map('x', 'il', ':normal ^vg_<CR>')
+map('o', 'il', ':normal vil<CR>', { noremap = false })
+
