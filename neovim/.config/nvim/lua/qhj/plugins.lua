@@ -109,6 +109,8 @@ return packer.startup(function(use)
     config = [[require("bufferline").setup{}]]
   }
 
+  use { 'jose-elias-alvarez/null-ls.nvim', config = [[require('qhj.null-ls')]] }
+
   -- notify
   use 'rcarriga/nvim-notify'
 

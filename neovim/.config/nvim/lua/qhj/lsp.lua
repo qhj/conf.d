@@ -46,7 +46,10 @@ end
 
 vim.lsp.handlers["textDocument/definition"] = goto_definition('vsplit')
 
-local on_attach = function(_, bufnr)
+local on_attach = function(client, bufnr)
+  if client.name == 'tsserver' then
+    client.resolved_capabilities.document_formatting = false
+  end
   local function buf_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
 
   local opts = { noremap = true, silent = true }
@@ -107,12 +110,12 @@ lspconfig.jsonls.setup {
   on_attach = on_attach,
   settings = {
     json = {
-      schemas = require('schemastore').json.schemas {
-        select = {
-          'package.json',
-        },
-      },
+      schemas = require('schemastore').json.schemas(),
     },
   },
+}
+lspconfig.eslint.setup{
+  capabilities = caps,
+  on_attach = on_attach,
 }
 
