@@ -16,7 +16,6 @@ if not ok then
   return
 end
 
-
 packer.init {
   compile_path = require('packer.util').join_paths(vim.fn.stdpath('data'), 'site', 'plugin', 'packer_compiled.lua'),
   display = {
@@ -39,7 +38,11 @@ return packer.startup(function(use)
   -- colorscheme
   use {
     'catppuccin/nvim', as = 'catppuccin',
-    config = function() vim.cmd [[colorscheme catppuccin]] end
+    config = function()
+      vim.g.catppuccin_flavour = 'macchiato'
+      require('catppuccin').setup()
+      vim.cmd [[ colorscheme catppuccin ]]
+    end
   }
 
   -- completion
@@ -80,7 +83,7 @@ return packer.startup(function(use)
   use {
     'JoosepAlviste/nvim-ts-context-commentstring',
     after = 'Comment.nvim',
-    config = function ()
+    config = function()
       require('qhj.tree-sitter')
       require('qhj.comment')
     end
@@ -111,6 +114,13 @@ return packer.startup(function(use)
 
   use { 'jose-elias-alvarez/null-ls.nvim', config = [[require('qhj.null-ls')]] }
 
+  use { 'lukas-reineke/indent-blankline.nvim', config = function()
+    require("indent_blankline").setup {
+      show_current_context = true,
+      show_current_context_start = true,
+    }
+  end }
+
   -- notify
   use 'rcarriga/nvim-notify'
 
@@ -118,4 +128,3 @@ return packer.startup(function(use)
     require('packer').sync()
   end
 end)
-
