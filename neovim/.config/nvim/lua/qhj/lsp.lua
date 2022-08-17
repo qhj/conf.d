@@ -74,25 +74,30 @@ end
 local lspconfig = require('lspconfig')
 
 -- Lua
--- `sudo pacman -Syu lua-language-server`
+-- Arch: `sudo pacman -Syu lua-language-server`
+-- nix: `sumneko-lua-language-server`
 -- TODO
 lspconfig.sumneko_lua.setup {
   capabilities = caps,
   on_attach = on_attach,
   settings = {
     Lua = {
+      runtime = {
+        version = 'LuaJIT',
+      },
       diagnostics = {
         globals = { 'vim' },
-        workspace = {
-          library = vim.api.nvim_get_runtime_file('', true),
-        },
+      },
+      workspace = {
+        library = vim.api.nvim_get_runtime_file('', true),
       },
     },
   },
 }
 
--- TypeScript, HTML, CSS, JSON
--- `pnpm add -g typescript-language-server vscode-langservers-extracted`
+-- TypeScript, HTML, CSS, JSON, ESLint, Emmet
+-- nix: `nodePackages.typescript-language-server, nodePackages.vscode-langservers-extracted, nodePackages.typescript`
+-- pnpm: `pnpm add -g typescript-language-server vscode-langservers-extracted emmet-ls`
 lspconfig.tsserver.setup {
   capabilities = caps,
   on_attach = on_attach,
@@ -114,8 +119,17 @@ lspconfig.jsonls.setup {
     },
   },
 }
-lspconfig.eslint.setup{
+lspconfig.eslint.setup {
+  capabilities = caps,
+  on_attach = on_attach,
+}
+lspconfig.emmet_ls.setup {
   capabilities = caps,
   on_attach = on_attach,
 }
 
+-- nix: `rust-analyzer`
+lspconfig.rust_analyzer.setup {
+  capabilities = caps,
+  on_attach = on_attach,
+}
