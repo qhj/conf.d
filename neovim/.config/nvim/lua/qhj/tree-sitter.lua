@@ -7,6 +7,8 @@ require'nvim-treesitter.configs'.setup {
     'typescript',
     'tsx',
     'json',
+    'rust',
+    'nix',
   },
   highlight = {
     enable = true,
