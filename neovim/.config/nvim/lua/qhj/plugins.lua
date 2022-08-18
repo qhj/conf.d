@@ -77,6 +77,7 @@ return packer.startup(function(use)
 
   -- auto pairs
   use { 'windwp/nvim-autopairs', after = 'nvim-cmp', config = [[require'qhj.autopairs']] }
+  use { 'windwp/nvim-ts-autotag', config = [[require('nvim-ts-autotag').setup()]]}
 
   -- comment
   use { 'numToStr/Comment.nvim', after = 'nvim-treesitter' }

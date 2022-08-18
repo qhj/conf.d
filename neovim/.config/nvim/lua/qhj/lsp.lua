@@ -95,9 +95,9 @@ lspconfig.sumneko_lua.setup {
   },
 }
 
--- TypeScript, HTML, CSS, JSON, ESLint, Emmet
+-- TypeScript, HTML, CSS, JSON, ESLint
 -- nix: `nodePackages.typescript-language-server, nodePackages.vscode-langservers-extracted, nodePackages.typescript`
--- pnpm: `pnpm add -g typescript-language-server vscode-langservers-extracted emmet-ls`
+-- pnpm: `pnpm add -g typescript-language-server vscode-langservers-extracted`
 lspconfig.tsserver.setup {
   capabilities = caps,
   on_attach = on_attach,
@@ -120,10 +120,6 @@ lspconfig.jsonls.setup {
   },
 }
 lspconfig.eslint.setup {
-  capabilities = caps,
-  on_attach = on_attach,
-}
-lspconfig.emmet_ls.setup {
   capabilities = caps,
   on_attach = on_attach,
 }
