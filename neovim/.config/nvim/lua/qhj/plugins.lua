@@ -77,7 +77,7 @@ return packer.startup(function(use)
 
   -- auto pairs
   use { 'windwp/nvim-autopairs', after = 'nvim-cmp', config = [[require'qhj.autopairs']] }
-  use { 'windwp/nvim-ts-autotag', config = [[require('nvim-ts-autotag').setup()]]}
+  use { 'windwp/nvim-ts-autotag', config = [[require('nvim-ts-autotag').setup()]] }
 
   -- comment
   use { 'numToStr/Comment.nvim', after = 'nvim-treesitter' }
@@ -88,15 +88,6 @@ return packer.startup(function(use)
       require('qhj.tree-sitter')
       require('qhj.comment')
     end
-  }
-
-  -- file explorer
-  use {
-    'kyazdani42/nvim-tree.lua',
-    requires = {
-      'kyazdani42/nvim-web-devicons',
-    },
-    config = [[require('qhj.nvim-tree')]],
   }
 
   use {
@@ -126,6 +117,15 @@ return packer.startup(function(use)
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true },
     config = [[require('lualine').setup()]]
+  }
+
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    requires = { { 'nvim-lua/plenary.nvim' } }
+  }
+  use {
+    "nvim-telescope/telescope-file-browser.nvim",
+    config = [[require('qhj.telescope')]]
   }
 
   -- notify
